@@ -2,9 +2,19 @@ package learn
 
 class Person {
 
-	var firstName="Sushanth";
-	var lastName ="Reddy";
-	var address = "Sunnyvale";
+	private var firstName:String="Sushanth";
+	private var lastName:String ="Reddy";
+	protected var address:String = "Sunnyvale";
+	protected var age:Int = 0;
+	val immutableObject: String = "IAMSTRONG";
+	
+	def setFirstName(first:String){
+	  this.firstName = first;
+	}
+	
+	def setLastName(last:String){
+	  this.lastName = last;
+	}
 	
 	def printName(){
 	  println(firstName + " "+ lastName);
@@ -18,6 +28,16 @@ class Person {
 	  var sum:Int = 0;
       sum = a + b;
       return sum;
+	}	
+}
+
+class NicePerson extends Person{
+	
+	def setAge(ag:Int)={
+	  this.age = ag;
 	}
 	
+	def getTheAge():Int = {	 
+      return this.age;
+	}
 }

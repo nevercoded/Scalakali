@@ -17,10 +17,21 @@ object helloworld {
 		 
 		//Creating an object of that class Person
 		var person = new Person();
-		person.firstName = "Senior";
-		person.lastName = "Hero";
+		person.setFirstName("Senior");
+		person.setLastName("Hero");
 		person.printName
 		person.printAddress	
 		println(person addNumbers(100,300)); // different infix syntax
+		//Trying to change the immutable object
+		// person.immutableObject = "Rocket"; // This doesnt work.
+		
+		//Subclass
+		var nicePerson = new NicePerson();
+		nicePerson.setAge(100);
+		println( nicePerson.getTheAge);
+		
+		
+		
+		
 	}
 }
