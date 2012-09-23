@@ -29,8 +29,8 @@ object HelloWorksheet {
 		}
 	}
 	
-	var name = new AnyName();                 //> name  : HelloWorksheet.AnyName = HelloWorksheet$$anonfun$main$1$AnyName$1@10
-                                                  //| 46822
+	var name = new AnyName();                 //> name  : HelloWorksheet.AnyName = HelloWorksheet$$anonfun$main$1$AnyName$1@16
+                                                  //| 0e796
 	name.firstName = "sushanth";
 	name.lastName = "reddy";
 	name.printName();                         //> sushanthreddy
